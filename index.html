@@ -1,171 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preload" href="style.css" as="style">
-    <link rel="stylesheet" href="style.css">
-    <title>DecoMueblesSayago | Carpintería, Cocinas integrales, Closets y Puertas en Cúcuta y Villa del Rosario</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="icon" type="image/x-icon" href="img/DMS.ico">
-    <meta name="description" content="DecoMueblesSayago ofrece servicios de carpintería de calidad en Cúcuta y Villa del Rosario. 
-        Descubre nuestras cocinas integrales, closets personalizados y puertas excepcionales. 
-        Más de 25 años de experiencia combinando elegancia y funcionalidad. 
-        Transforma tu espacio con nuestras creaciones únicas.">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
 
-</head>
-
-<body>
-
-    <div class="cont-principal">
-        <div class="navBar">
-            <img src="img/logoDMS.jpg" alt="logoDMS" class="logo">
-
-            <div class="secciones">
-                <a href="#quienesSomos">Quienes Somos</a>
-                <a href="#nuestroTrabajo">Nuestro Trabajo</a>
-                <a href="#contacto">Contacto</a>
-            </div>
-        </div>
-
-        <div class="navBarCel">
-            <img src="img/logoDMS.jpg" alt="logoDMS" class="logo">
-            <a onclick="abrirMenu()" class="botonMenu">Menu</a>
-            <div class="overlay" id="idMenu">
-                <a onclick="cerrarMenu()" class="close">X</a>
-
-                <div class="contenido-overlay">
-                    <a href="#quienesSomos" onclick="cerrarMenu()">Quienes Somos</a>
-                    <br>
-                    <a href="#nuestroTrabajo" onclick="cerrarMenu()">Nuestro Trabajo</a>
-                    <br>
-                    <a href="#contacto" onclick="cerrarMenu()">Contacto</a>
-                </div>
-
-            </div>
-
-        </div>
-        <main>
-            <div class="textoEntrada">
-                <article>
-                    <h1>DECO MUEBLES SAYAGO</h1>
-                    <h2>Carpinteria desde 1995</h2>
-                    <h2>Arte hecho a mano</h2>
-                    <h2>Francisco Javier Sayago Aponte</h2>
-                    <h2>Carrera 8va,N° 0-50, bellavista, Villa del rosario</h2>
-                </article>
-
-            </div>
-        </main>
-
+    <title>DecoMueblesSayago</title>
+  </head>
+  <body>
+    <div class="main-container" id="home">
+      <section class="nav-bar">
+        <nav>
+          <div class="nav-mobile">
+            <a href="#home" class="nav-home"
+              ><i class="fa-solid fa-house"></i
+            ></a>
+            <button class="nav-toggle" aria-label="Abrir menú">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+          <ul class="nav-links">
+            <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+            <li><a href="#nuestro-trabajo">Nuestro Trabajo</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#ubicacion">Ubicación</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </section>
+      <div class="primary-info">
+        <section class="texto">
+          <div class="nombre fade-up">
+            <h1>DECO</h1>
+            <h2>MUEBLES SAYAGO</h2>
+          </div>
+          <div class="data-info fade-up">
+            <p>Carpinteria | Especialista en maderas y muebles integrales</p>
+            <p>Norte de Santander</p>
+          </div>
+        </section>
+        <section class="img-main-logo fade-up">
+          <img src="logopng.png" class="neon-img" alt="logo" />
+        </section>
+      </div>
     </div>
-    <a href="" name="quienesSomos"></a>
-    <div class="quienesSomos">
-        <div class="quienesSomosDesc">
-            <h1>¿Quienes somos?</h1>
-            <br>
-            <p>Desde 1995, DecoMueblesSayago ha sido el referente en carpintería de calidad en Villa del
-                Rosario, cucuta y en toda el área metropolitana de Norte de Santander. Nos enorgullece contar con más de
-                dos
-                décadas de experiencia, durante las cuales hemos perfeccionado nuestro oficio y nos hemos comprometido a
-                ofrecer productos y servicios excepcionales.creemos en la fusión de la artesanía tradicional con la
-                innovación contemporánea.
-                <br>
-                Colaboramos estrechamente con nuestros clientes para entender sus visiones y
-                necesidades, transformando ideas en piezas únicas y funcionales. Ya sea que estemos trabajando en una
-                renovación completa o en la creación de muebles a medida, nuestra dedicación al diseño personalizado
-                asegura la satisfacción del cliente.
+
+    <!--Quienes somos  -->
+    <div class="quienes-somos" id="sobre-nosotros">
+      <h2 class="fade-up">¿Quienes somos?</h2>
+      <p class="fade-up">
+        Desde 1995, DecoMueblesSayago ha sido un referente en carpintería de
+        calidad en Villa del Rosario, Cúcuta y en toda el área metropolitana de
+        Norte de Santander. Nos enorgullece contar con más de dos décadas de
+        experiencia, durante las cuales hemos perfeccionado nuestro oficio y nos
+        hemos comprometido a ofrecer productos y servicios excepcionales.
+        Creemos en la fusión de la artesanía tradicional con la innovación
+        contemporánea. Colaboramos estrechamente con nuestros clientes para
+        entender sus visiones y necesidades, transformando ideas en piezas
+        únicas y funcionales. Ya sea que trabajemos en una renovación completa o
+        en la creación de muebles a medida, nuestra dedicación al diseño
+        personalizado garantiza la plena satisfacción del cliente.
+      </p>
+    </div>
+
+    <!-- Nuestro trabajo -->
+    <div class="nuestro-trabajo" id="nuestro-trabajo">
+      <h2 class="fade-up">Nuestro trabajo</h2>
+      <section class="NT-container">
+        <div class="NT-item fade-up">
+          <img src="img/6.webp" class="nt-img" alt="Mueble 1" />
+          <div class="descripcion-nt">
+            <h1>Cocinas</h1>
+            <p>
+              Diseñamos cocinas personalizadas que se adaptan a tu espacio,
+              estilo y necesidades. Usamos materiales de alta calidad como
+              madera sólida (roble, nogal, cedro), MDF, melamina y combinaciones
+              con vidrio o acero inoxidable para lograr acabados duraderos y
+              elegantes. Ofrecemos estilos clásicos, modernos o rústicos, con
+              soluciones prácticas de almacenamiento, herrajes resistentes y
+              detalles como iluminación LED o sistemas de cierre suave. Creamos
+              cocinas funcionales, estéticas y únicas para que disfrutes cada
+              momento en ellas.
             </p>
+          </div>
         </div>
-        <img src="img/logoDMS.jpg" alt="img">
+
+        <div class="NT-item fade-up">
+          <div class="descripcion-nt">
+            <h1>Puertas</h1>
+            <p>
+              Fabricamos puertas a medida que combinan seguridad, estilo y
+              durabilidad. Trabajamos con maderas finas como caoba, encino, pino
+              o nogal, así como opciones en MDF y acabados laminados o
+              laqueados, ideales para interiores o exteriores. Ofrecemos diseños
+              modernos, clásicos o rústicos, con opciones de acabado natural,
+              teñido o pintura personalizada. También integramos detalles como
+              vidrio decorativo, molduras talladas y herrajes de alta calidad.
+              Nuestras puertas no solo son funcionales, también elevan la
+              estética de tu hogar o negocio.
+            </p>
+          </div>
+          <img src="img/8.webp" class="nt-img" alt="Mueble 1" />
+        </div>
+
+        <div class="NT-item fade-up">
+          <img src="img/2.webp" class="nt-img" alt="Mueble 1" />
+          <div class="descripcion-nt">
+            <h1>Closets</h1>
+            <p>
+              Optimizamos tu espacio con closets diseñados a tu gusto y
+              necesidad. Desde estilos modernos hasta clásicos, cada proyecto es
+              único y funcional. Usamos materiales como melamina texturizada,
+              MDF, madera natural y acabados en alto brillo o mate. Ofrecemos
+              interiores personalizados con divisiones inteligentes, cajones,
+              zapateras, espejos, puertas corredizas o abatibles, e iluminación
+              integrada. Ideal para dormitorios, vestidores o espacios
+              reducidos, nuestros closets combinan organización, estilo y
+              calidad.
+            </p>
+          </div>
+        </div>
+        <div class="NT-item fade-up">
+          <div class="descripcion-nt">
+            <h1>Muebles de baño</h1>
+            <p>
+              Diseñamos muebles de baño funcionales y elegantes, adaptados a tu
+              espacio y estilo. Utilizamos materiales resistentes a la humedad
+              como MDF con sellado especial, melaminas impermeables y maderas
+              tratadas, con acabados en tonos naturales, lacados o texturizados.
+              Incorporamos lavabos, espejos, repisas y sistemas de
+              almacenamiento que maximizan cada rincón. Ya sea para un baño
+              principal o de visitas, creamos soluciones duraderas, modernas y
+              completamente personalizadas.
+            </p>
+          </div>
+          <img src="img/12.webp" class="nt-img" alt="Mueble 1" />
+        </div>
+
+        <div class="NT-item fade-up">
+          <img src="img/10.webp" class="nt-img" alt="Mueble 1" />
+          <div class="descripcion-nt">
+            <h1>Variedades</h1>
+            <p>
+              En nuestra carpintería damos forma a cualquier idea en madera.
+              Fabricamos una amplia gama de productos personalizados como
+              ventanas, escaleras, marcos, fachadas de locales, puertas
+              corredizas tipo granero, pérgolas, techos decorativos, celosías,
+              muebles empotrados, barandales, repisas, tableros de cama, y mucho
+              más. Trabajamos con distintas especies de madera y materiales
+              derivados, adaptándonos tanto a interiores como exteriores. Cada
+              pieza se diseña para armonizar con tu espacio, ofreciendo
+              funcionalidad, estética y resistencia. Si lo puedes imaginar en
+              madera, nosotros lo hacemos realidad.
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
-    <a href="" name="nuestroTrabajo"></a>
-    <div class="nuestroTrabajo">
-        <div class="slider-frame">
-            <ul>
-                <li><img src="sliderDMS/1.jpg" alt="fotoSlider"></li>
-                <li><img src="sliderDMS/2.jpg" alt="fotoSlider"></li>
-                <li><img src="sliderDMS/3.jpg" alt="fotoSlider"></li>
-                <li><img src="sliderDMS/4.jpg" alt="fotoSlider"></li>
-                <li><img src="sliderDMS/5.jpg" alt="fotoSlider"></li>
-                <li><img src="sliderDMS/6.jpg" alt="fotoSlider"></li>
-                <li><img src="sliderDMS/7.jpg" alt="fotoSlider"></li>
-                <li><img src="sliderDMS/8.jpg" alt="fotoSlider"></li>
-                <li><img src="sliderDMS/9.jpg" alt="fotoSlider"></li>
-                <li><img src="sliderDMS/10.jpg" alt="fotoSlider"></li>
-                <li><img src="sliderDMS/11.jpg" alt="fotoSlider"></li>
-            </ul>
-        </div>
-        <div class="nuestroTrabajoTexto">
-            <h1>Nuestro Trabajo</h1>
-            <p> En el corazón de nuestros proyectos se destacan nuestras cocinas a medida, closets y
-                puertas excepcionales. Cada cocina refleja la perfecta fusión de estilo y eficiencia, mientras que
-                nuestros closets ofrecen soluciones organizativas inteligentes con un toque de elegancia. Nuestras
-                puertas, desde las de entrada hasta las interiores, son testimonios de artesanía meticulosa y selección
-                cuidadosa de materiales. Con una atención especial a los detalles y una combinación de técnicas
-                tradicionales y modernas, transformamos la madera en piezas que no solo son visualmente impactantes,
-                sino también duraderas.¡Permítanos ser parte de la transformación de su entorno con nuestra dedicación a
-                la calidad
-                y la atención al detalle!</p>
+
+    <!-- GALERIA -->
+    <div class="galeria" id="galeria">
+      <h2 class="fade-up">Galería</h2>
+
+      <!-- Galería de escritorio -->
+      <section class="galeria-grid">
+        <div class="galeria-item fade-up"><img src="img/1.webp" class="galeria-img" alt="" /></div>
+        <div class="galeria-item fade-up"><img src="img/2.webp" class="galeria-img"  alt="" /></div>
+        <div class="galeria-item fade-up"><img src="img/3.webp" class="galeria-img"  alt="" /></div>
+        <div class="galeria-item fade-up"><img src="img/4.webp" class="galeria-img"  alt="" /></div>
+        <div class="galeria-item fade-up"><img src="img/6.webp" class="galeria-img"  alt="" /></div>
+        <div class="galeria-item fade-up"><img src="img/8.webp" class="galeria-img"  alt="" /></div>
+        <div class="galeria-item fade-up"><img src="img/9.webp" class="galeria-img"  alt="" /></div>
+        <div class="galeria-item fade-up"><img src="img/10.webp" class="galeria-img"  alt="" /></div>
+        <div class="galeria-item fade-up"><img src="img/12.webp" class="galeria-img"  alt="" /></div>
+        <div class="galeria-item fade-up"><img src="img/23.webp" class="galeria-img"  alt="" /></div>
+        <div class="galeria-item fade-up"><img src="img/14.webp" class="galeria-img"  alt="" /></div>
+        <div class="galeria-item fade-up"><img src="img/18.webp" class="galeria-img"  alt="" /></div>
+        <div class="galeria-item fade-up"><img src="img/20.webp" class="galeria-img"  alt="" /></div>
+        <div class="galeria-item fade-up"><img src="img/22.webp" class="galeria-img"  alt="" /></div>
+        <div class="galeria-item fade-up"><img src="img/24.webp" class="galeria-img"  alt="" /></div>
+        <div class="galeria-item fade-up"><img src="img/26.webp" class="galeria-img"  alt="" /></div>
+      </section>
+
+      <!-- Galería slider móvil -->
+      <div class="galeria-slider swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/1.webp" alt="" /></div>
+          <div class="swiper-slide"><img src="img/2.webp" alt="" /></div>
+          <div class="swiper-slide"><img src="img/3.webp" alt="" /></div>
+          <div class="swiper-slide"><img src="img/4.webp" alt="" /></div>
+          <div class="swiper-slide"><img src="img/6.webp" alt="" /></div>
+          <div class="swiper-slide"><img src="img/8.webp" alt="" /></div>
+          <div class="swiper-slide"><img src="img/9.webp" alt="" /></div>
+          <div class="swiper-slide"><img src="img/10.webp" alt="" /></div>
+          <div class="swiper-slide"><img src="img/12.webp" alt="" /></div>
+          <div class="swiper-slide"><img src="img/23.webp" alt="" /></div>
+          <div class="swiper-slide"><img src="img/14.webp" alt="" /></div>
+          <div class="swiper-slide"><img src="img/18.webp" alt="" /></div>
+          <div class="swiper-slide"><img src="img/20.webp" alt="" /></div>
+          <div class="swiper-slide"><img src="img/22.webp" alt="" /></div>
+          <div class="swiper-slide"><img src="img/24.webp" alt="" /></div>
+          <div class="swiper-slide"><img src="img/26.webp" alt="" /></div>
         </div>
 
-    </div>
-    <a href="" name="contacto"></a>
-
-    <div class="contactoRedes">
-        <h1>Nuestras redes y contacto</h1>
-        <div class="red">
-            <img src="img/fbico.png" alt="logofb" class="contactoLogo">
-            <p>Encuentranos en facebook como</p>
-            <a href="https://www.facebook.com/profile.php?id=1168332522">Decomuebles Sayago</a>
-        </div>
-        <div class="red">
-            <img src="img/igico.png" alt="logofb" class="contactoLogo">
-            <p>Encuentranos en instagram como</p>
-            <a href="https://www.instagram.com/decomueblessayago?utm_source=ig_web_
-                button_share_sheet&igsh=ZDNlZDc0MzIxNw==">decomueblessayago</a>
-        </div>
-        <div class="red">
-            <img src="img/wsico.png" alt="logofb" class="logows">
-            <p>Contactanos via whatsApp al</p> <a href="https://wa.link/ez8hwf">3158631002</a>
-        </div>
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
 
+    <div id="modal" class="modal">
+      <span id="modal-close" class="modal-close">&times;</span>
+      <img id="modal-img" class="modal-content" src="" alt="Imagen ampliada" />
+    </div>
 
-    <footer>
-        <div class="footer-container">
-            <div class="footer-content-container">
-                <h3 class="website-logo">Deco Muebles Sayago</h3>
-                <span class="footer-info">Francisco javier sayago aponte</span>
-                <span class="footer-info">deco.muebles@hotmail.com</span>
-                <span class="footer-info">Carrera 8va,N° 0-50, bellavista, Villa del rosario</span>
-            </div>
-            <div class="footer-menus">
-                <div class="footer-content-container">
-                    <span class="menu-title">menu</span>
-                    <a href="#quienesSomos" class="menu-item-footer">Quienes somos</a>
-                    <a href="#nuestroTrabajo" class="menu-item-footer">Nuestro trabajo</a>
-                    <a href="#contacto" class="menu-item-footer">Contacto</a>
-                </div>
+    <!-- Ubicacion -->
 
-            </div>
+    <div class="ubicacion" id="ubicacion">
+      <h2 class="fade-up">Ubicacion</h2>
+      <p class="fade-up">
+        Nos encontramos en villa del rosario, norte de santander
+      </p>
+      <p class="fade-up">Carrera 8, #0-50 barrio bella vista</p>
+      <section class="ubicacion-container fade-up">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.5578512655316!2d-72.4717546!3d7.8365299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6647c80be192e3%3A0xba62cdfe5bd073a!2sDecoMuebles%20Sayago!5e0!3m2!1ses-419!2sco!4v1747512412717!5m2!1ses-419!2sco"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          class="mapa"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </div>
 
-            <div class="footer-content-container">
-                <span class="menu-title">Siguenos</span>
-                <div class="social-container">
-                    <a href="https://www.facebook.com/profile.php?id=1168332522" class="social-link"></a>
-                    <a href="https://www.instagram.com/decomueblessayago?utm_source=ig_web_
-                    button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-link"></a>
-                    <a href="https://wa.link/ez8hwf" class="social-link"></a>
-                </div>
-            </div>
+    <div class="contacto" id="contacto">
+      <h2 class="fade-up">Contactanos</h2>
+      <section class="contacto-container">
+        <div class="redes fade-up">
+          <div class="contacto-item">
+            <i class="fa-brands fa-whatsapp fa-2xl" style="color: #0656f9"></i>
+            <p>+57 315 863 1002</p>
+          </div>
+          <div class="contacto-item">
+            <i class="fa-brands fa-instagram fa-2xl" style="color: #0656f9"></i>
+            <p>DecoMueblesSayago</p>
+          </div>
         </div>
-        <div class="copyright-container">
-            <span class="copyright">Copyright 2024,Todos los derechos reservados decomueblessayago</span>
+        <p class="fade-up">
+          Envianos tu informacion y nos pondremos en contacto contigo
+        </p>
+        <div class="form-email">
+          <form action="">
+            <div class="form-item">
+              <label for="nombre-email">Tu nombre</label>
+              <input type="text" id="nombre-email" required />
+            </div>
+            <div class="form-item">
+              <label for="email-email">Tu email</label>
+              <input type="email" id="email-email" required />
+            </div>
+            <div class="form-item">
+              <label for="numero-email">Numero de telefono</label>
+              <input type="number" id="numero-email" required />
+            </div>
+            <div class="form-item">
+              <label for="mensaje-email">¿Que deseas cotizar?</label>
+              <textarea
+                name=""
+                id="mensaje-email"
+                cols="30"
+                rows="10"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" id="submit-email">Enviar</button>
+          </form>
         </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-
+      </section>
+    </div>
+  </body>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-item">
+        <p>+57 315 863 1002</p>
+      </div>
+      <div class="footer-item">
+        <p>Calle 8, #0-50 barrio bella vista</p>
+      </div>
+      <div class="footer-item">
+        <p>DecoMuebles Sayago &copy; 2025,</p>
+        <p>Todos los derechos reservados</p>
+      </div>
+    </div>
+  </footer>
+  <script
+    src="https://kit.fontawesome.com/489fef096a.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="index.js"></script>
 </html>
