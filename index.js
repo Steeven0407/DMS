@@ -21,7 +21,7 @@ form.addEventListener("submit", function (e) {
     email: email,
     time: fecha,
     numero: numero,
-    mensaje: mensaje,
+    message: mensaje,
   };
 
   emailjs.send("service_mwxydft", "template_tpniwev", params).then(
